@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand {
+    background-image: url(/img/logo.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+#colors-legend {
+    background-color: transparent;
+    background-image: url(/img/colors_5.png);
+    background-size: 30px 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    border: none;
+    transition: all ease .3s;
+}
+#colors-legend:hover {
+    transition: all ease .3s;
+    transform: rotate(360deg);
+}
+
+#grid .fast-create-lesson {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    background: #fff linear-gradient(to right, #a8ff78, #78ffd6);
+    z-index: 10;
+}
+#grid .fast-create-lesson:hover {
+    filter: brightness(80%);
+}
+#grid .fast-create-lesson > i {
+    font-size: 20px;
+}
+
+#grid .fast-edit-lesson {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    background: #fff linear-gradient(to right, #f7971e, #ffd200);
+    z-index: 10;
+}
+#grid .fast-edit-lesson:hover {
+    filter: brightness(80%);
+}
+#grid .fast-edit-lesson > i {
+    font-size: 15px;
+}
+
+#grid td a {
+    color: #212529;
+    text-decoration: none;
+}
+
+#grid .text-cross-out {
+    text-decoration: line-through;
+}
+
+#grid thead,
+#grid tbody,
+#grid tfoot,
+#grid tr,
+#grid td,
+#grid th {
+    border-color: #ccc;
+}
+#grid .table > :not(:first-child) {
+    border-top: 1px solid currentColor;
+}
+#grid .table thead {
+    background-color: #f0f0f0;
+}
+
+#grid .lesson-cell {
+    position: relative;
+}
+
+#grid .lesson-cell .record {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    color: red;
+    z-index: 1000;
+}
+#grid .lesson-cell .link-type-individual {
+    position: absolute;
+    top: 15px;
+    right: 2px;
+    color: #0d6efd;
+    z-index: 1000;
+}
+
+
+
+#room-helper div {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+#schedule .form-control {
+    background-color: #fff;
+}
+
+#grid .table tbody td {
+    position: relative;
+}
+
+

@@ -1,0 +1,558 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+#new-entity {
+    font-size: 25px;
+    padding: 0 8px;
+}
+#notifications {
+    font-size: 20px;
+    padding: 0 8px;
+}
+.table thead {
+    text-align: center;
+}
+.pagination {
+    justify-content: right;
+}
+.logo {
+    display: block;
+    background-image: url(/img/logo.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    margin-left: 0.8rem;
+}
+.tooltip-inner {
+    max-width: 300px;
+    font-size: 15px;
+}
+
+
+/*----------  sidebar  ----------*/
+#sidebar {
+    color: #fff;
+    min-height: 100%;
+    height: 100vh;
+    /*background-color: #373737;*/
+    background-color: #f1f3f4;
+}
+#sidebar .nav-link {
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: none;
+}
+#sidebar .nav-link,
+#sidebar .nav-link:hover {
+    color: #373737;
+    font-size: 16px;
+}
+#sidebar .nav-link.active,
+#sidebar .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#sidebar .nav-link i {
+    margin-right: 10px;
+}
+#sidebar .dropdown-item {
+    padding: 0.4rem 1rem;
+}
+/*----------  sidebar  ----------*/
+
+
+
+#dashboard .navbar {
+    background-color: #f1f3f4;
+    /*background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
+    /*background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);*/
+    /*border-bottom: 2px solid #ddd;*/
+}
+#dashboard .btnformgroup {
+    position: fixed;
+    width: auto;
+    top: 55px;
+    bottom: auto;
+    left: auto;
+    right: 0;
+    background-color: rgba(255,255,255,0);
+    backdrop-filter: blur(10px);
+    border: 0 solid transparent;
+    border-radius: 0 0 0 7px;
+    padding: 15px;
+    margin: 0;
+    z-index: 101;
+}
+#dashboard .form-control,
+#dashboard .form-select,
+#dashboard .accordion-item {
+    border-color: #212529!important;
+}
+#dashboard #per-page {
+    border-color: #777!important;
+}
+#dashboard .accordion-button:focus {
+    z-index: 0;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+#dashboard .accordion-button:not(.collapsed) {
+    color: #212529;
+    background-color: #eee;
+    box-shadow: none;
+}
+#dashboard .accordion-button {
+    padding: 0.7rem 0.7rem;
+}
+
+
+/*----------  actions  ----------*/
+.actions > .btn {
+    margin-right: 7px;
+}
+/*----------  actions  ----------*/
+
+
+/*----------  TABLE  ----------*/
+.table thead {
+    text-align: center;
+}
+.table a {
+    text-decoration: none;
+}
+.table td > a {
+    color: #212529;
+}
+.table td > a:focus,
+.table td > a:hover {
+    color: #212529;
+}
+.table thead a {
+    color: #212529;
+}
+.table .actions {
+    opacity: 0;
+}
+.actions:hover,
+.table > tbody > tr:hover .actions {
+    opacity: 1;
+}
+.table .actions form,
+.table .actions div {
+    display: inline-flex;
+}
+/*----------  TABLE  ----------*/
+
+
+/*----------  widgets  ----------*/
+#main a {
+    text-decoration: none;
+}
+#main .card {
+    color: #000;
+    border: none;
+    border-radius: 5px;
+}
+#main .card-title {
+    font-size: 20px;
+}
+#main .count {
+    font-size: 25px;
+    font-weight: bold;
+}
+#main .widget-lessons {
+    background-color: #fd7f6f;
+}
+#main .widget-rooms {
+    background-color: #ffb55a;
+}
+#main .widget-teachers {
+    background-color: #ffee65;
+}
+#main .widget-groups {
+    background-color: #b2e061;
+}
+#main .widget-colors {
+    background-color: #8bd3c7
+}
+#main .widget-timeslots {
+    background-color: #fdcce5
+}
+#main .widget-users {
+    background-color: #beb9db
+}
+/*----------  widgets  ----------*/
+
+
+/*----------  lessons  ----------*/
+#lessons {
+    position: relative;
+}
+#lessons .bg-status-draft {
+    color: #212121;
+    background-color: #e0e0e0;
+}
+#lessons .bg-status-requested {
+    color: #b71c1c;
+    background-color: #ffcdd2;
+}
+#lessons .bg-status-approved {
+    color: #1b5e20;
+    background-color: #c8e6c9;
+}
+#lessons .bg-status-rejected {
+    color: #e65100;
+    background-color: #ffe0b2;
+}
+#lessons .bg-status-canceled {
+    color: #191970;
+    background-color: #add8e6;
+}
+#lessons #lesson-name-search .form-control {
+    background-color: #fff;
+    border-color: #0d6efd!important;
+}
+/*----------  lessons  ----------*/
+
+
+/*----------  users  ----------*/
+#users {
+    position: relative;
+}
+#users #user-name-search .form-control {
+    background-color: #fff;
+    border-color: #0d6efd!important;
+}
+/*----------  users  ----------*/
+
+/*----------  groups  ----------*/
+#groups {
+    position: relative;
+}
+#groups #group-name-search .form-control {
+    background-color: #fff;
+    border-color: #0d6efd!important;
+}
+/*----------  groups  ----------*/
+
+/*----------  teachers  ----------*/
+#teachers {
+    position: relative;
+}
+#teachers #teacher-name-search .form-control {
+    background-color: #fff;
+    border-color: #0d6efd!important;
+}
+/*----------  teachers  ----------*/
+
+/*----------  btn-check  ----------*/
+.colors .btn-check:focus + .btn,
+.colors .btn:focus,
+.colors input:checked + .btn,
+.reasons .btn-check:focus + .btn,
+.reasons .btn:focus,
+.reasons input:checked + .btn {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #000;
+}
+/*----------  btn-check  ----------*/
+
+/*----------  lesson page  ----------*/
+#lesson dt,
+#lesson dd {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0;
+}
+#lesson dt {
+    border-right: none;
+}
+
+.badge.bg-draft {
+    background-color: #212121;
+}
+.badge.bg-requested {
+    background-color: #b71c1c;
+}
+.badge.bg-approved {
+    background-color: #1b5e20;;
+}
+.badge.bg-rejected {
+    background-color: #e65100;
+}
+.badge.bg-canceled {
+    background-color: #191970;
+}
+/*----------  lesson page  ----------*/
+
+
+/*----------  create lesson page  ----------*/
+#admin-area,
+#manager-area {
+    background-color: #eff0f5;
+    border-radius: 10px;
+    padding: 15px;
+}
+#admin-area > p,
+#manager-area > p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(155 155 155 / 70%);
+    text-shadow: 2px 2px 3px rgb(255 255 255 / 10%);
+    text-transform: uppercase;
+}
+/*----------  create lesson page  ----------*/
+
+
+
+/*----------  show page actions  ----------*/
+#lesson .actions > div,
+#lesson .actions form,
+#teacher .actions > div,
+#teacher .actions form,
+#room .actions > div,
+#room .actions form,
+#timeslot .actions > div,
+#timeslot .actions form,
+#group .actions > div,
+#group .actions form,
+#color .actions > div,
+#color .actions form {
+    display: inline-flex;
+}
+/*----------  show page actions  ----------*/
+
+
+
+
+
+/*----------  get-course-link  ----------*/
+.get-course-link-notify {
+    color: #fff;
+    background-color: #000;
+    position: fixed;
+    z-index: 9999;
+    right: 20px;
+    top: 10px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+/*----------  get-course-link  ----------*/
+
+
+
+
+/*----------  filters  ----------*/
+#lesson-filters,
+#user-filters,
+#teacher-filters {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255,255,255,0);
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    z-index: 1000;
+}
+
+#lesson-filters label.btn {
+    background-color: #f8fafc;
+}
+#lesson-filters label.btn:hover,
+#lesson-filters label.btn:focus,
+#lesson-filters label.btn:active {
+    color: #fff!important;
+    background-color: #212529!important;
+    border-color: #212529!important;
+}
+
+#lesson-filters .btn-check:checked + .btn-outline-dark,
+#lesson-filters .btn-check:active + .btn-outline-dark,
+#lesson-filters .btn-outline-dark:active,
+#lesson-filters .btn-outline-dark.active,
+#lesson-filters .btn-outline-dark.dropdown-toggle.show {
+    color: #fff!important;
+    background-color: #212529!important;
+    border-color: #212529!important;
+}
+/*----------  lesson-filters  ----------*/
+
+
+/*----------  Grid layout  ----------*/
+#grid-layout td {
+    position: relative;
+}
+#grid-layout .occupied {
+    /*background-color: #212529;*/
+    background-color: #495662;
+}
+#grid-layout .current-lesson i {
+    /*color: #ffebeb;*/
+    color: #ebdae5;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    font-size: 18px;
+}
+#grid-layout table th,
+#grid-layout table td {
+    padding: 4px 8px;
+    width: 7.692%;
+}
+#grid-layout .table > :not(:first-child) {
+    border-top: 1px solid #212529;
+}
+#grid-layout .table tr.marked {
+    background-color: #d7fdd8;
+}
+#grid-layout .table .cell:hover {
+    box-shadow: 0 0 25px #c3144a inset;
+}
+/*----------  Grid layout  ----------*/
+
+
+
+/*----------  Select2 override  ----------*/
+.select2-container--bootstrap-5 .select2-selection {
+    font-size: 0.9rem;
+    border-color: #212529!important;
+    background-color: #f8fafc;
+}
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option {
+    font-size: 0.9rem;
+}
+.select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+    font-size: 0.9rem;
+}
+.select2-container--bootstrap-5 .select2-dropdown {
+    background-color: #f8fafc;
+    border-color: #212529!important;
+}
+.select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.select2-container.select2-container--bootstrap-5.select2-container--open .select2-dropdown.select2-dropdown--below {
+    min-width: 200px;
+}
+.select2-container--bootstrap-5 .select2-selection {
+    font-size: 16px;
+    background-color: #fff;
+}
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option {
+    font-size: 16px;
+}
+.select2.select2-container.select2-container--bootstrap-5 {
+    width: auto!important;
+}
+
+.groups-select2 .select2-container--bootstrap-5 .select2-selection,
+.groups-select2 .select2-container--bootstrap-5.select2-container--focus .select2-selection,
+.groups-select2 .select2-container--bootstrap-5.select2-container--open .select2-selection,
+.groups-select2 .select2-container--bootstrap-5.select2-container--open.select2-container--below .select2-selection {
+    min-width: 200px;
+}
+/*----------  Select2 override  ----------*/
+
+
+/*----------  Lesson Status Radio Buttons  ----------*/
+.status-draft {
+    font-weight: bold;
+    color: #333;
+    background-color: #ddd;
+}
+.status-draft:hover,
+.status-draft:focus,
+.status-draft:active,
+.btn-check:checked+.status-draft {
+    color: #333;
+    background-color: #bbb;
+}
+.status-requested {
+    font-weight: bold;
+    color: #a40000 ;
+    background-color: #ffd8d8;
+}
+.status-requested:hover,
+.status-requested:focus,
+.status-requested:active,
+.btn-check:checked+.status-requested {
+    color: #a40000 ;
+    background-color: #ffa4a4;
+}
+.status-approved {
+    font-weight: bold;
+    color: #006400;
+    background-color: #c7ffc7;
+}
+.status-approved:hover,
+.status-approved:focus,
+.status-approved:active,
+.btn-check:checked+.status-approved {
+    color: #006400;
+    background-color: #9aff9a;
+}
+.status-rejected {
+    font-weight: bold;
+    color: #a22d00;
+    background-color: #ffe5b4;
+}
+.status-rejected:hover,
+.status-rejected:focus,
+.status-rejected:active,
+.btn-check:checked+.status-rejected {
+    color: #a22d00;
+    background-color: #ffd482;
+}
+.status-canceled {
+    font-weight: bold;
+    color: #005969;
+    background-color: #d2f9ff;
+}
+.status-canceled:hover,
+.status-canceled:focus,
+.status-canceled:active,
+.btn-check:checked+.status-canceled {
+    color: #005969;
+    background-color: #95f1ff;
+}
+/*----------  Lesson Status Radio Buttons  ----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
